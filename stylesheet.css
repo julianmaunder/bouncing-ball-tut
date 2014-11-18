@@ -21,9 +21,16 @@ body {
 	padding: 0;
 }
 
-.SPACER {
-	height: 2000px;
-	background: #fff;
+h1 {
+	text-transform: uppercase;
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+h3 {
+	text-transform: uppercase;
 }
 
 .presents h1 {
@@ -65,21 +72,11 @@ body {
 	height: 200px;
 	background: #FFA494;
 	border-radius: 50%;
-	z-index: -1;	
 }
 
 .title	{
 	width: 50%;
 	margin: -400px auto 300px auto;
-}
-
-.title h2 {
-	font-size: 60px;
-	text-align: left;
-	color: #ccc;
-	letter-spacing: 5px;
-	margin: 0;
-	padding: 0;
 }
 
 .title h1 {
@@ -91,11 +88,58 @@ body {
 	padding: 0;
 }
 
+.title h2 {
+	font-size: 40px;
+	text-align: left;
+	color: #ccc;
+	letter-spacing: 5px;
+	margin: 0;
+	padding: 0 0 120px 0;
+}
+
 .title h3 {
 	font-size: 20px;
 	text-align: center;
 	color: #ccc;
 	letter-spacing: 5px;
-	margin: 200px 0;
+	margin: 200px 0 0 0;
 	padding: 0;
 }
+
+.lesson {
+	width: 100%;
+	background: #fff;
+}
+
+.getting-started {
+	height: 1000px;
+	width: 50%;
+	margin: 0 auto;
+	background: #fff;
+	padding: 80px;
+}
+
+.getting-started h1 {
+	font-size: 60px;
+	text-align: left;
+	color: #47E3FF;
+	letter-spacing: 5px;
+	margin: 0;
+	padding: 0;
+}
+
+.getting-started h2 {
+	font-size: 40px;
+	text-align: center;
+	color: #FF4787;
+	letter-spacing: 5px;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+
+
