@@ -15,7 +15,7 @@
 }
 
 body {
-	background: #efefef;
+	background: #BAF4FF;
 	font-family: "futura-round", futura, sans;
 	margin: 0;
 	padding: 0;
@@ -82,7 +82,7 @@ h3 {
 .title h1 {
 	font-size: 80px;
 	text-align: left;
-	color: #FF6347;
+	color: #47E3FF;
 	letter-spacing: 5px;
 	margin: 0;
 	padding: 0;
@@ -91,16 +91,20 @@ h3 {
 .title h2 {
 	font-size: 40px;
 	text-align: left;
-	color: #ccc;
+	color: #47E3FF;
 	letter-spacing: 5px;
 	margin: 0;
 	padding: 0 0 120px 0;
 }
 
+.title	h2 span {
+	color: #fff;
+}
+
 .title h3 {
 	font-size: 20px;
 	text-align: center;
-	color: #ccc;
+	color: #47E3FF;
 	letter-spacing: 5px;
 	margin: 200px 0 0 0;
 	padding: 0;
@@ -108,31 +112,21 @@ h3 {
 
 .lesson {
 	width: 100%;
-	background: #fff;
+	background: #666;
 }
 
-.getting-started {
+.example {
 	height: 1000px;
 	width: 50%;
 	margin: 0 auto;
-	background: #fff;
+	background: #666;
 	padding: 80px;
 }
 
-.getting-started h1 {
-	font-size: 60px;
-	text-align: left;
-	color: #47E3FF;
-	letter-spacing: 5px;
-	margin: 0;
-	padding: 0;
-}
-
-.getting-started h2 {
+.example h1 {
 	font-size: 40px;
 	text-align: center;
-	color: #FF4787;
-	letter-spacing: 5px;
+	color: #999;
 	margin: 0;
 	padding: 0;
 }
