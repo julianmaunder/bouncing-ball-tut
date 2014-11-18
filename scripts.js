@@ -5,12 +5,15 @@ $( document ).ready(function() {
 			var scrollPos = $(window).scrollTop();
 			// var viewportHeight = $(window).height();
 			console.log(scrollPos);
-			var ballPos = scrollPos - 1250;
+			var ballPos = scrollPos - 500;
+			var bouncePos = ((450 - ballPos) * 3) + ballPos;
 			console.log(ballPos + 'ball');
-			$(".ball").css({transform: 'translateY(' + ballPos + 'px)'});
-			// if (scrollPos > 1300) {
-			// 	$(".ball").css({transform: 'translateY(-' + ballPos + 'px)'});
-			// }
+			// .css({ 'transform': 'translate3d(0px, ' + ballPos + 'px, 0) scale('+ scale +')'});
+			$(".ball").css({ 'transform': 'translate3d(0px, ' + ballPos + 'px, 0)'});
+			$(".presents").css({ 'transform': 'translate3d(0px, -' + scrollPos * 2 + 'px, 0)'});
+			if (scrollPos > 950) {
+			$(".ball").css({ 'transform': 'translate3d(0px, ' + bouncePos + 'px, 0)'});
+			}
 			// else {
 			// 	$(".ball").css({transform: 'translateY(0)'})
 			// };
