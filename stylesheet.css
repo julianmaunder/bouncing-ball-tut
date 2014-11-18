@@ -70,7 +70,7 @@ body {
 
 .title	{
 	width: 50%;
-	margin: -400px auto 200px auto;
+	margin: -400px auto 600px auto;
 }
 
 .title h2 {
@@ -92,9 +92,9 @@ body {
 }
 
 .title h3 {
-	font-size: 40px;
-	text-align: left;
-	color: #aaa;
+	font-size: 20px;
+	text-align: center;
+	color: aaa;
 	letter-spacing: 5px;
 	margin: 80px 0;
 	padding: 0;
