@@ -70,13 +70,13 @@ body {
 
 .title	{
 	width: 50%;
-	margin: -400px auto 600px auto;
+	margin: -400px auto 300px auto;
 }
 
 .title h2 {
-	font-size: 80px;
+	font-size: 60px;
 	text-align: left;
-	color: #aaa;
+	color: #ccc;
 	letter-spacing: 5px;
 	margin: 0;
 	padding: 0;
@@ -94,8 +94,8 @@ body {
 .title h3 {
 	font-size: 20px;
 	text-align: center;
-	color: aaa;
+	color: #ccc;
 	letter-spacing: 5px;
-	margin: 80px 0;
+	margin: 200px 0;
 	padding: 0;
 }
