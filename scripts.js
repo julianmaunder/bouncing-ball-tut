@@ -24,5 +24,11 @@ $( document ).ready(function() {
 
 		window.requestAnimationFrame(headerParallax);
 
+		$( ".example-wrap" ).hover(
+  			function() {
+    		$('.example-ball').addClass( "bouncing" );
+  			}
+		);
+
 	});
 });
