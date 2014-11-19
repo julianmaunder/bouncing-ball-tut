@@ -26,6 +26,10 @@ $( document ).ready(function() {
 				else {
 					$(".ball").removeClass("bounce");
 				}
+
+				if (scrollPos > 1200) {
+					$(".question-badge").css('opacity', '1').addClass("question-pop");
+				}
 			
 			});
 		}

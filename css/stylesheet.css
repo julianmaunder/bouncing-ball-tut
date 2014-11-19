@@ -163,6 +163,7 @@ body {
 
 .lesson p {
 	font-weight: lighter;
+	color: #666;
 }
 
 .question {
@@ -171,7 +172,19 @@ body {
 
 .question-badge {
 	width: 100%;
+	opacity: 0;
 }
+
+.question-pop {
+	-webkit-animation: question-pop-in 0.5s normal forwards;
+}
+
+@-webkit-keyframes question-pop-in {
+  0%   { transform: scale(0.5); }
+  10%  { transform: scale(1.2); }
+  100% { transform: scale(1);   }
+}
+
 
 
 
