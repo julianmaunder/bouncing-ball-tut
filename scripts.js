@@ -18,6 +18,14 @@ $( document ).ready(function() {
 				if (scrollPos > 1150) {
 					$(".ball").css({ 'transform': 'translate3d(0px, ' + bouncePos + 'px, 0)'});
 				}
+
+				if (scrollPos > 1140 && scrollPos > 1155) {
+					$(".ball").addClass("bounce");
+				}
+
+				else {
+					$(".ball").removeClass("bounce");
+				}
 			
 			});
 		}

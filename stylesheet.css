@@ -74,6 +74,15 @@ h3 {
 	border-radius: 50%;
 }
 
+.bounce {
+	-webkit-animation: bounce 0.2s normal forwards;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100%   { height: 200px; }
+  50% 		 { height: 160px; }
+}
+
 .title	{
 	width: 50%;
 	margin: -400px auto 300px auto;
