@@ -156,11 +156,21 @@ body {
 
 .lesson h1 {
 	font-weight: lighter;
-	color: #47E3FF;
+	color: #666;
+	margin: 0;
+	padding: 0;
 }
 
 .lesson p {
 	font-weight: lighter;
+}
+
+.question {
+	padding-top: 60px;
+}
+
+.question-badge {
+	width: 100%;
 }
 
 
