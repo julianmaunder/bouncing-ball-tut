@@ -32,11 +32,5 @@ $( document ).ready(function() {
 
 		window.requestAnimationFrame(headerParallax);
 
-		$( ".example-wrap, example" ).hover(
-  			function() {
-    		$('.example-ball').addClass( "bouncing" );
-  			}
-		);
-
 	});
 });
