@@ -110,45 +110,6 @@ h3 {
 	padding: 0;
 }
 
-.example-wrap {
-	width: 100%;
-	background: #fff;
-	padding: 0;
-}
-
-.example {
-	width: 50%;
-	margin: 0 auto;
-	padding: 40px;
-}
-
-.example h1 {
-	font-size: 40px;
-	text-align: center;
-	color: #ddd;
-	margin: 0;
-	padding: 0;
-}
-
-@-webkit-keyframes bounce {
-  0%   { transform: translateY(0) scale(1); }
-  100% { transform: translateY(-325px) scale(1.25); }
-}
-
-.example-ball {
-	width: 200px;
-	height: 200px;
-	border-radius: 50%;
-	background: #FFA494;
-	margin: 300px auto 0 auto;
-}
-
-.bouncing {
-	-webkit-animation: bounce 0.99s infinite;
-	-webkit-animation-direction: alternate;
- 	-webkit-animation-timing-function: ease-out;
-}
-
 .lesson {
 	width: 100%;
 	background: #fff;
