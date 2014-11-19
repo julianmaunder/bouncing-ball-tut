@@ -79,8 +79,8 @@ h3 {
 }
 
 @-webkit-keyframes bounce {
-  0%, 100%   { height: 200px; }
-  50% 		 { height: 160px; }
+  0%, 100%   { height: 200px; width: 200px; margin-left: 0; }
+  50% 		 { height: 160px; width: 240px; margin-left: -20px;}
 }
 
 .title	{
