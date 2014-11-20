@@ -3,11 +3,9 @@ $( document ).ready(function() {
 		
 		function animation() {
 			$(window).scroll(function() {
-				// Store scrollTop in variable
+
 				var scrollPos = $(window).scrollTop();
-				// var viewportHeight = $(window).height();
 				console.log(scrollPos);
-				console.log(ballPos + 'ball');
 
 				var ballPos = scrollPos - 500;
 				var bouncePos = (((550 - ballPos) * 2.5) + ballPos).toFixed(2);
@@ -52,26 +50,39 @@ $( document ).ready(function() {
 					header();
 				}
 
-				if (scrollPos > 1300) {
-					$(".question-badge").css('opacity', '1').addClass("question-pop hover");
+				if (scrollPos > 1200) {
+					$(".question-badge").css('opacity', '1').addClass("hover");
 				} 
 
 				else {
-					$(".question-badge").removeClass("question-pop hover");
+					$(".question-badge").css('opacity', '0').removeClass(" hover");
 				}
 
 				if (scrollPos > 1200) {
 					tetris();
 				}
 
-				// if (scrollPos > 1600) {
-				// 	$(".html5-badge").css('opacity', '1').addClass("hover");
-				// }
-
 			});
 		}
 
+		$('#start').keyup(function(){
+			var startValue = $(this).val();
+			if (startValue === "var animate = true;") {
+				$(".check").css('opacity', '1');
+				$(".start-ball").addClass('start-ball-bounce');
+				$(".start-good-job").removeClass('visually-hidden');
+			}
+			else {
+				$(".check").css('opacity', '0');
+				$(".start-ball").removeClass('start-ball-bounce');
+			}
+		});
+
 		window.requestAnimationFrame(animation);
+
 		hljs.initHighlightingOnLoad();
+		$('div.code').each(function(i, block) {
+  			hljs.highlightBlock(block);
+		});
 	});
 });

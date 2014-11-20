@@ -70,6 +70,55 @@ h1, h2, h3, p {
 	font-weight: lighter;
 }
 
+input {
+	display: block;
+	width: 100%;
+	font-size: 1em;
+	font-weight: lighter;
+	font-family: monospace;
+	color: #cdcdcd;
+	height: 2em;
+	margin: 1em 0;
+	padding: 1.5em 1em;
+	border: none;
+	border-radius: 0.8em;
+	background: #333;
+}
+
+input:focus {
+	outline: none;
+}
+
+pre {
+	display: block;
+	width: 100%;
+	font-size: 1em;
+	font-weight: lighter;
+	font-family: monospace;
+	color: #cdcdcd;
+	height: 2em;
+	margin: 1em 0;
+	padding: 1.5em 1em;
+	border: none;
+	border-radius: 0.8em;
+	background: #333;
+}
+
+.text-field {
+	margin: 2em 0;
+	padding: 0;
+}
+
+.check {
+	display: block;
+	position: relative;
+	width: 30%;
+	top: -125px;
+	left: 80%;
+	margin: 0;
+	opacity: 0;
+}
+
 .presents h1 {
 	font-size: 160px;
 	line-height: 1;
@@ -189,24 +238,13 @@ h1, h2, h3, p {
 	width: 80%;
 	opacity: 0;
 	margin: 0 auto;
-}
-
-.question-pop {
-	-webkit-animation: question-pop-in 0.5s normal forwards;
-}
-
-@-webkit-keyframes question-pop-in {
-  0%   { transform: scale(0.5); }
-  10%  { transform: scale(1.2); }
-  80%  { transform: scale(1); }
-  100% { transform: scale(1);   }
+	transition: opacity 0.6s ease-in;
 }
 
 .intro {
 	margin-top: 100px;
 	padding: 100px 0;
 	background: rgb(246,246,246);
-	z-index: 2;
 	overflow: hidden;
 }
 
@@ -214,7 +252,7 @@ h1, h2, h3, p {
 	max-height: 500px;
 }
 
-.tetris-green {
+.tetris-yellow {
 	width: 400px;
 	height: 400px;
 	background: url('../img/tetris.svg') no-repeat top left;
@@ -237,17 +275,18 @@ h1, h2, h3, p {
 	display: block;
 	margin: 0 auto;
 	opacity: 0;
+	transform: translateY(-80px);
 	transition: all 1s linear;
 }
 
 .hover {
-	-webkit-animation: hover 1.5s ease-in-out infinite;
+	-webkit-animation: hover 1s ease-in-out infinite;
 	-webkit-animation-direction: alternate;
 }
 
 @-webkit-keyframes hover {
-	0%   { transform: translateY(0); }
-	100% { transform: translateY(-20px); }
+	0%   { transform: translateY(-80px); }
+	100% { transform: translateY(-90px); }
 }
 
 .start {
@@ -256,6 +295,30 @@ h1, h2, h3, p {
 
 .start code {
 	background: #efefef;
+}
+
+.start-good-job {
+	transition: opacity 1s ease-in;
+	
+}
+
+.start-ball {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	border-radius: 50%;
+	background: tomato;
+	transform: translateY(0);
+}
+
+.start-ball-bounce {
+	-webkit-animation: start-bounce 0.5s ease-in infinite;
+	-webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes start-bounce {
+	0%   { transform: translateY(0); }
+	100% { transform: translateY(200px); }
 }
 
 .margin {
@@ -271,8 +334,8 @@ h1, h2, h3, p {
 	padding: 15em 0 0 0;
 }
 
-.hide {
-	display: none;
+.visually-hidden {
+	opacity: 0;
 }
 
 .spacer {
