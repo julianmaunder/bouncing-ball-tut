@@ -3,8 +3,10 @@
 	<title>Play Hack</title>
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" charset="utf-8" />
 	<link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" />
+	<link rel="stylesheet" href="css/default.css">
 	<script src="js/jquery.js"></script>
 	<script src="js/scripts.js"></script>
+	<script src="js/highlight.pack.js"></script>
 </head>
 <body>
 	<div class="presents">
@@ -24,26 +26,52 @@
 			<div class="col-lg-4 col-md-6 col-sm-12"></div>
 		</div>
 		<div class="row">
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-1"></div>
-			<div class="col-lg-4 col-md-4 col-sm-2 col-xs-2">
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-10">
+				<p><span class="margin margin-hint">Keep an eye out for hints and trivia in the marginalea!</span></p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10">
 				<img src="img/question-left.svg" class="question-badge">
 			</div>
-			<div class="col-lg-4 col-md-4 col-sm-8 col-xs-8">
-				<p><span>How does one animate a bouncing ball so that the outcome is smooth and seems natural, yet at the same time without animating every frame by hand or creating some sort of physics element?</span></p>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10">
+				<p>How does one animate a bouncing ball so that the outcome is smooth and seems natural, yet at the same time without animating every frame by hand or creating some sort of physics element?</p>
 			</div>
 		</div>
 		<div class="row intro">
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-1"></div>
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10">
-				<p>This can be accomplished through HTML and CSS, if interaction such as scrolling on a website, or touching a object with a mouse is desired than the addition of JAVASCRIPT is necessary. These markup and programming languages make up a majority of the web they are the building blocks.</p>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-10">
+				<p><span class="margin margin-hint">HTML stands for <i>Hyper Text Markup Language</i> and CSS for <i>Cascading Style Sheets.</i><br>The internet &lt;3's acronyms.</span></p>
 			</div>
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-1">
-				<img src="img/html5.svg" class="html5-badge">
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-10">
+				<p>This can be accomplished through <code>html</code> and <code>css</code>. If interaction such as scrolling on a website, or touching an object with a mouse is desired than the addition of <code>javascript</code> is necessary.</p><p>These markup and programming languages are the building blocks of the web.</p>
+			</div>
+
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-1 tetris">
+				<div class="tetris-green "></div>
+				<div class="tetris-pink"></div>		
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-10">
+				<p><span class="margin margin-hint-low">This Tetris animation is an example of <i>Binding</i> an animation to a <i>Scroll Event.</i></span></p>
+			</div>
+
+		</div>
+		<div class="row start">
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-10">
+				<p><span class="margin margin-hint">These are called a <i>Variable Declarations</i> and a True or False value is called a <i>Boolean.</i></span></p>
+			</div>
+			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-10">
+				<p>Let's play with some <code>javascript</code> code.</p>
+				<p>Try changing the line <code>var animate = false;</code> to <code>var animate = true;</code>.
+			</p>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-10">
+				<p><span class="margin margin-hint-low">Hint: Make sure you keep the same punctuation or <i>syntax</i>.</span></p>
 			</div>
 		</div>
 	</div>
-
-
-	<div class="spacer"></div>
+	<div class="hide">
+		<img src="img/tetris.svg">
+		<img src="img/tetris1.svg">
+		<img src="img/tetris2.svg">
+		<img src="img/tetris3.svg">
+	</div>
 </body>
 </html>

@@ -58,8 +58,16 @@ body {
 	padding: 0;
 }
 
+.container-fluid {
+	min-width: 1024px;
+}
+
 p {
 	line-height: 1.6;
+}
+
+h1, h2, h3, p {
+	font-weight: lighter;
 }
 
 .presents h1 {
@@ -154,12 +162,12 @@ p {
 .lesson {
 	background: #fff;
 	font-family: "din-round", sans-serif;
-	color: #666;
+	color: #333;
 }
 
 .lesson h1 {
 	font-weight: lighter;
-	color: #666;
+	color: #333;
 	margin: 0;
 	padding: 0;
 }
@@ -171,8 +179,6 @@ p {
 .lesson p span {
 	display: block;
 	margin-top: 60px;
-	font-style: italic; 
-	color: #666;
 }
 
 .question {
@@ -200,8 +206,32 @@ p {
 	margin-top: 100px;
 	padding: 100px 0;
 	background: rgb(246,246,246);
+	z-index: 2;
+	overflow: hidden;
 }
 
+.tetris {
+	max-height: 500px;
+}
+
+.tetris-green {
+	width: 400px;
+	height: 400px;
+	background: url('../img/tetris.svg') no-repeat top left;
+	background-size: 100%;
+	transform: translateY(50px);
+}
+
+.tetris-pink {
+	position: relative;
+	top: -900px;
+	left: 62;
+	width: 400px;
+	height: 400px;
+	background: url('../img/tetris3.svg') no-repeat top left;
+	background-size: 100%;
+	transform: translateY(50px);
+}
 .html5-badge {
 	width: 80%;
 	display: block;
@@ -210,20 +240,40 @@ p {
 	transition: all 1s linear;
 }
 
-.html5-badge:hover {
-}
-
 .hover {
-	-webkit-animation: hover 1s ease-in-out infinite;
+	-webkit-animation: hover 1.5s ease-in-out infinite;
 	-webkit-animation-direction: alternate;
 }
 
 @-webkit-keyframes hover {
 	0%   { transform: translateY(0); }
-	100% { transform: translateY(-10px); }
+	100% { transform: translateY(-20px); }
 }
 
+.start {
+	padding: 100px 0;
+}
 
+.start code {
+	background: #efefef;
+}
+
+.margin {
+	font-size: 0.6em;
+	color: #999;
+}
+
+.margin-hint {
+	padding: 1.6em 0;
+}
+
+.margin-hint-low {
+	padding: 15em 0 0 0;
+}
+
+.hide {
+	display: none;
+}
 
 .spacer {
 	width: 100%;
