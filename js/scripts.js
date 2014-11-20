@@ -31,6 +31,10 @@ $( document ).ready(function() {
 					$(".question-badge").css('opacity', '1').addClass("question-pop");
 				}
 			
+				if (scrollPos > 1600) {
+					$(".html5-badge").css('opacity', '1').addClass("hover");
+				}
+
 			});
 		}
 
