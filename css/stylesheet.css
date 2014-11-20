@@ -199,7 +199,7 @@ p {
 .intro {
 	margin-top: 100px;
 	padding: 100px 0;
-	background: rgb(248,248,248);
+	background: rgb(246,246,246);
 }
 
 .html5-badge {
@@ -211,7 +211,6 @@ p {
 }
 
 .html5-badge:hover {
-	margin: -40px auto;
 }
 
 .hover {

@@ -27,7 +27,7 @@ $( document ).ready(function() {
 					$(".ball").removeClass("bounce");
 				}
 
-				if (scrollPos > 1200) {
+				if (scrollPos > 1300) {
 					$(".question-badge").css('opacity', '1').addClass("question-pop");
 				}
 			
