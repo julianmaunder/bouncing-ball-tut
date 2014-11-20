@@ -312,13 +312,14 @@ pre {
 }
 
 .start-ball-bounce {
-	-webkit-animation: start-bounce 0.5s ease-in infinite;
+	-webkit-animation: start-bounce 0.5s cubic-bezier(.6,.01,.9,.7) infinite;
 	-webkit-animation-direction: alternate;
 }
 
 @-webkit-keyframes start-bounce {
 	0%   { transform: translateY(0); }
-	100% { transform: translateY(200px); }
+	85%  { transform: translateY(180px) scaleX(1) scaleY(1);}
+	100% { transform: translateY(200px) scaleX(1.2) scaleY(0.8); }
 }
 
 .margin {
